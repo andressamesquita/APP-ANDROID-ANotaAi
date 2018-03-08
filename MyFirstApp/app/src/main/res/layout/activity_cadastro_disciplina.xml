@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andressaribeiro.myfirstapp.app.CadastroAlunoActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nome_disciplina"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Disciplina"
+            android:inputType="textShortMessage"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/professor"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Professor"
+            android:layout_gravity="center"
+            android:inputType="textShortMessage"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_perAvaliativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Período avaliativo: "
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <ToggleButton
+            android:id="@+id/toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="semestre"
+            android:textOff="bimestre"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="SALVAR"
+        android:onClick="salvarDisciplina"/>
+
+
+</LinearLayout>

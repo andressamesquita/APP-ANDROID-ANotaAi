@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="nome">Nome</string>
+    <string name="app_name">ANotaAí</string>
+    <string name="nome_do_usu_rio">Nome do usuário</string>
+    <string name="escola">Escola</string>
+    <string name="toast">Cadastro confirmado</string>
+    <string name="toast_condensed">Usuário cadastrado</string>
+    <string name="senha">Senha</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aaaa"
+    tools:context="com.example.andressaribeiro.myfirstapp.app.TelaInicialActivity">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/anotaai"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:onClick="IrParaListaDisciplinas"
+        android:layout_marginTop="30dp"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="60dp"
+        android:background="#00B0FF"
+        android:clickable="true">
+
+        <ImageButton
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_disciplinas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="DISCIPLINAS"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:onClick="IrParaListaRendimentos"
+        android:layout_marginTop="10dp"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="60dp"
+        android:background="#00B0FF"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="RENDIMENTO"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_rendimento" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:onClick="IrParaListaAgendas"
+        android:layout_marginTop="10dp"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="60dp"
+        android:background="#00B0FF"
+        android:clickable="true">
+
+        <ImageButton
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/agenda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="AGENDA"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

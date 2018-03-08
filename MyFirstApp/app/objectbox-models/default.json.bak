@@ -1,0 +1,201 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6194866723571362625",
+      "lastPropertyId": "8:7857701999510715164",
+      "name": "Aluno",
+      "properties": [
+        {
+          "id": "1:3963615595694152686",
+          "name": "id"
+        },
+        {
+          "id": "2:5762295819661293114",
+          "name": "nome"
+        },
+        {
+          "id": "3:6765610211567570719",
+          "name": "escola"
+        },
+        {
+          "id": "4:3361736094099295648",
+          "name": "mediaEscola"
+        },
+        {
+          "id": "5:2682914055120557967",
+          "name": "mediaPessoal"
+        },
+        {
+          "id": "6:5949833067174707043",
+          "name": "email"
+        },
+        {
+          "id": "7:5248301779566428822",
+          "name": "senha"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:2409451683712092506",
+          "name": "disciplinaToMany"
+        },
+        {
+          "id": "2:8532682563265409249",
+          "name": "boletimBimestralToMany"
+        },
+        {
+          "id": "3:1383010266145729640",
+          "name": "boletimSemestralToMany"
+        }
+      ]
+    },
+    {
+      "id": "2:6010093613939197431",
+      "lastPropertyId": "8:6300916567167739975",
+      "name": "Disciplina",
+      "properties": [
+        {
+          "id": "1:4661559683000312221",
+          "name": "id"
+        },
+        {
+          "id": "2:5747037097617307743",
+          "name": "nomeDisciplina"
+        },
+        {
+          "id": "3:2684168001854056760",
+          "name": "professor"
+        },
+        {
+          "id": "6:3595173973257426320",
+          "indexId": "1:7283030699152466937",
+          "name": "alunoToOneId"
+        },
+        {
+          "id": "7:3155623467178950433",
+          "name": "periodo"
+        },
+        {
+          "id": "8:6300916567167739975",
+          "name": "conteudos"
+        }
+      ],
+      "relations": [
+        {
+          "id": "6:3097822202512660418",
+          "name": "boletimBimestralToMany"
+        },
+        {
+          "id": "7:7454325747961992917",
+          "name": "boletimSemestralToMany"
+        }
+      ]
+    },
+    {
+      "id": "3:5536569507292106430",
+      "lastPropertyId": "4:6850137916873572520",
+      "name": "BoletimBimestral",
+      "properties": [
+        {
+          "id": "1:365786135823907608",
+          "name": "id"
+        },
+        {
+          "id": "2:5254273109887999504",
+          "name": "notaB1"
+        },
+        {
+          "id": "3:2003794148291415864",
+          "name": "notaB2"
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:7138147364782287679",
+          "name": "disciplinaToMany"
+        }
+      ]
+    },
+    {
+      "id": "4:7616300596810758401",
+      "lastPropertyId": "5:5300056408227498060",
+      "name": "BoletimSemestral",
+      "properties": [
+        {
+          "id": "1:8081134915087492982",
+          "name": "id"
+        },
+        {
+          "id": "2:1319344904171732740",
+          "name": "notaS1"
+        },
+        {
+          "id": "3:2146879545589634385",
+          "name": "notaS2"
+        },
+        {
+          "id": "4:2778340885384019233",
+          "name": "notaS3"
+        },
+        {
+          "id": "5:5300056408227498060",
+          "name": "notaS4"
+        }
+      ],
+      "relations": [
+        {
+          "id": "5:5655931458068400451",
+          "name": "disciplinaToMany"
+        }
+      ]
+    },
+    {
+      "id": "5:5146597939410462359",
+      "lastPropertyId": "5:9129244990494345865",
+      "name": "Agenda",
+      "properties": [
+        {
+          "id": "1:1488029333370683854",
+          "name": "id"
+        },
+        {
+          "id": "2:8211667565647786337",
+          "name": "tituloEvento"
+        },
+        {
+          "id": "3:8638939711336867578",
+          "name": "data"
+        },
+        {
+          "id": "4:3817083714583519200",
+          "name": "descricao"
+        },
+        {
+          "id": "5:9129244990494345865",
+          "indexId": "2:4075152307055931121",
+          "name": "alunoToOneId"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:5146597939410462359",
+  "lastIndexId": "2:4075152307055931121",
+  "lastRelationId": "7:7454325747961992917",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    5252205312729457743,
+    2944475414213142365,
+    7857701999510715164,
+    6850137916873572520
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
